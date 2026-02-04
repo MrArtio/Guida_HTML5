@@ -3,25 +3,11 @@
 Mini-sito didattico per imparare HTML da zero fino a HTML5 e best practice,
 con esempi pratici, quiz interattivi e dark mode.
 
+
 ## 🌐 Demo online
 
 https://MrArtio.github.io/Guida_HTML5/
 
-## 🗂 Struttura del progetto
-
-html-guida/
-├── index.html              → Guida 1 – HTML Base
-├── guida-avanzata.html     → Guida 2 – HTML Avanzato
-├── guida-html5.html        → Guida 3 – HTML5 API & Best Practice
-│
-├── style/
-│   ├── style.css           → Stile principale
-│   └── dark.css            → Dark mode
-│
-├── js/
-│   └── script.js           → JavaScript
-│
-└── README.md
 
 ## 📚 Contenuto delle guide
 
@@ -35,6 +21,7 @@ html-guida/
 - Elementi semantici
 - Esempio HTML live
 
+
 ### Guida 2 – HTML Avanzato
 - Meta tag e SEO
 - Audio e video
@@ -43,6 +30,7 @@ html-guida/
 - Accessibilità
 - Elementi speciali HTML
 
+
 ### Guida 3 – HTML5 & Best Practice
 - HTML5
 - Web Storage API
@@ -50,6 +38,7 @@ html-guida/
 - Performance
 - SEO
 - Quiz finale
+
 
 ## ✨ Funzionalità
 
@@ -60,12 +49,14 @@ html-guida/
 - ♿ Accessibilità
 - 🚀 Pubblicabile con GitHub Pages
 
+
 ## 🧑‍💻 Tecnologie usate
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
 - GitHub Pages
+
 
 ## 🚀 Pubblicazione su GitHub Pages
 
@@ -75,12 +66,14 @@ html-guida/
 4. Seleziona `main / root`
 5. Salva
 
+
 ## 🎯 Obiettivo
 
 Questo progetto nasce per:
 - imparare HTML in modo progressivo
 - fornire esempi pratici
 - simulare un corso online
+
 
 ## 🔮 Sviluppi futuri
 
@@ -89,11 +82,10 @@ Questo progetto nasce per:
 - PWA
 - Sezione CSS e JS
 
+
 ## 📄 Licenza
 
 Questo progetto è libero per uso didattico e personale.  
 Puoi modificarlo, migliorarlo e riutilizzarlo.
-
----
 
 ✨ **Buono studio e buon codice!**

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Guida HTML Avanzata</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/dark.css">
+</head>
+
+<body>
+<!-- 🔘 DARK MODE BUTTON -->
+<button id="darkToggle" class="dark-toggle" aria-label="Attiva dark mode">
+    🌙
+</button>
+
+<header>
+    <h1>Guida HTML Avanzata</h1>
+    <p>Elementi HTML meno comuni, avanzati e speciali</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Guida Base</a></li>
+        <li><a href="guida-avanzata.html">Guida Avanzata</a></li>
+        <li><a href="guida-html5.html">HTML5 & Best Practice</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="meta">
+    <h2>Meta, SEO e Head</h2>
+    <p>Questi elementi vanno inseriti nel <strong>&lt;head&gt;</strong>.</p>
+
+    <ul>
+        <li><strong>&lt;meta&gt;</strong>: charset, viewport, SEO</li>
+        <li><strong>&lt;title&gt;</strong>: titolo della pagina</li>
+        <li><strong>&lt;link&gt;</strong>: collegamento a CSS o icone</li>
+        <li><strong>&lt;style&gt;</strong>: CSS interno</li>
+        <li><strong>&lt;base&gt;</strong>: URL base del documento</li>
+    </ul>
+</section>
+
+<section id="media">
+    <h2>Audio e Video</h2>
+
+    <p><strong>&lt;audio&gt;</strong> riproduce file audio:</p>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Il browser non supporta l'audio.
+    </audio>
+
+    <p><strong>&lt;video&gt;</strong> riproduce video:</p>
+    <video controls width="100%">
+        <source src="video.mp4" type="video/mp4">
+        Il browser non supporta il video.
+    </video>
+
+    <p>
+        <strong>&lt;source&gt;</strong> permette formati multipli<br>
+        <strong>&lt;track&gt;</strong> aggiunge sottotitoli
+    </p>
+</section>
+
+<section id="embed">
+    <h2>Contenuti incorporati</h2>
+
+    <ul>
+        <li><strong>&lt;iframe&gt;</strong>: incorpora altre pagine</li>
+        <li><strong>&lt;embed&gt;</strong>: contenuti esterni</li>
+        <li><strong>&lt;object&gt;</strong>: oggetti multimediali</li>
+    </ul>
+
+    <iframe 
+        src="https://www.wikipedia.org" 
+        width="100%" 
+        height="300"
+        title="Esempio iframe">
+    </iframe>
+</section>
+
+<section id="inline">
+    <h2>Elementi Inline</h2>
+
+    <p>
+        <strong>&lt;span&gt;</strong> è un contenitore inline.<br>
+        <strong>&lt;br&gt;</strong> va a capo.<br>
+        <strong>&lt;hr&gt;</strong> crea una linea orizzontale.
+    </p>
+
+    <p>
+        <strong>&lt;sup&gt;</strong> x<sup>2</sup><br>
+        <strong>&lt;sub&gt;</strong> H<sub>2</sub>O
+    </p>
+
+    <p>
+        <strong>&lt;mark&gt;</strong> <mark>evidenzia testo</mark><br>
+        <strong>&lt;small&gt;</strong> <small>testo secondario</small>
+    </p>
+</section>
+
+<section id="code">
+    <h2>Codice e formattazione</h2>
+
+    <ul>
+        <li><strong>&lt;code&gt;</strong>: codice inline</li>
+        <li><strong>&lt;pre&gt;</strong>: testo preformattato</li>
+        <li><strong>&lt;kbd&gt;</strong>: input da tastiera</li>
+        <li><strong>&lt;samp&gt;</strong>: output di programmi</li>
+        <li><strong>&lt;var&gt;</strong>: variabili</li>
+    </ul>
+
+    <pre>
+<code>
+&lt;h1&gt;Ciao mondo&lt;/h1&gt;
+</code>
+    </pre>
+
+    <p>Premi <kbd>Ctrl</kbd> + <kbd>S</kbd> per salvare.</p>
+</section>
+
+<section id="accessibilita">
+    <h2>Accessibilità</h2>
+
+    <ul>
+        <li><strong>alt</strong>: descrive le immagini</li>
+        <li><strong>label</strong>: migliora i form</li>
+        <li><strong>aria-label</strong>: supporto screen reader</li>
+        <li><strong>role</strong>: ruolo semantico</li>
+    </ul>
+
+    <button aria-label="Pulsante di esempio">
+        Pulsante accessibile
+    </button>
+</section>
+
+<section id="extra">
+    <h2>Elementi speciali e meno comuni</h2>
+
+    <ul>
+        <li><strong>&lt;details&gt;</strong> e <strong>&lt;summary&gt;</strong></li>
+        <li><strong>&lt;dialog&gt;</strong></li>
+        <li><strong>&lt;progress&gt;</strong></li>
+        <li><strong>&lt;meter&gt;</strong></li>
+        <li><strong>&lt;template&gt;</strong></li>
+        <li><strong>&lt;noscript&gt;</strong></li>
+    </ul>
+
+    <details>
+        <summary>Clicca per espandere</summary>
+        Questo contenuto è nascosto di default.
+    </details>
+
+    <p>Caricamento:</p>
+    <progress value="70" max="100"></progress>
+</section>
+
+</main>
+
+<footer>
+    <p>Guida HTML Avanzata © 2026</p>
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>

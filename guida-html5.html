@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 APIs e Best Practice</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/dark.css">
+</head>
+
+<body>
+
+<!-- 🔘 DARK MODE BUTTON -->
+<button id="darkToggle" class="dark-toggle" aria-label="Attiva dark mode">
+    🌙
+</button>
+
+<header>
+    <h1>HTML5, API e Best Practice</h1>
+    <p>Funzionalità moderne e buone pratiche professionali</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Guida Base</a></li>
+        <li><a href="guida-avanzata.html">Guida Avanzata</a></li>
+        <li><a href="guida-html5.html">HTML5 & Best Practice</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="html5">
+    <h2>Cos'è HTML5</h2>
+    <p>
+        HTML5 introduce nuove API, elementi semantici e supporto nativo
+        per media, grafica e applicazioni web moderne.
+    </p>
+</section>
+
+<section id="storage">
+    <h2>Web Storage API</h2>
+    <ul>
+        <li><strong>localStorage</strong>: dati persistenti</li>
+        <li><strong>sessionStorage</strong>: dati temporanei</li>
+    </ul>
+
+    <pre><code>
+localStorage.setItem("utente", "Mario");
+    </code></pre>
+</section>
+
+<section id="geolocation">
+    <h2>Geolocation API</h2>
+    <p>
+        Permette di ottenere la posizione geografica dell’utente
+        (con consenso).
+    </p>
+
+    <pre><code>
+navigator.geolocation.getCurrentPosition(success);
+    </code></pre>
+</section>
+
+<section id="media-api">
+    <h2>Media & Device API</h2>
+
+    <ul>
+        <li><strong>getUserMedia</strong>: webcam e microfono</li>
+        <li><strong>MediaDevices</strong></li>
+        <li><strong>Fullscreen API</strong></li>
+    </ul>
+</section>
+
+<section id="canvas">
+    <h2>Canvas</h2>
+    <p>
+        <strong>&lt;canvas&gt;</strong> permette di disegnare grafica 2D
+        tramite JavaScript.
+    </p>
+
+    <canvas width="300" height="150" style="border:1px solid #ccc;"></canvas>
+</section>
+
+<section id="performance">
+    <h2>Performance & Best Practice</h2>
+
+    <ul>
+        <li>Usare elementi semantici</li>
+        <li>Ottimizzare immagini e media</li>
+        <li>Caricare JS con <strong>defer</strong></li>
+        <li>Usare <strong>meta viewport</strong></li>
+        <li>Scrivere HTML accessibile</li>
+    </ul>
+</section>
+
+<section id="accessibilita">
+    <h2>Accessibilità (A11y)</h2>
+
+    <ul>
+        <li>Struttura logica dei titoli</li>
+        <li>Testi alternativi</li>
+        <li>Contrasto colori</li>
+        <li>Supporto tastiera</li>
+    </ul>
+</section>
+
+<section id="seo">
+    <h2>SEO Best Practice</h2>
+
+    <ul>
+        <li>Uso corretto di &lt;title&gt;</li>
+        <li>Meta description</li>
+        <li>HTML semantico</li>
+        <li>Link descrittivi</li>
+    </ul>
+</section>
+
+<section id="conclusione">
+    <h2>Conclusione</h2>
+    <p>
+        Con HTML5 puoi creare applicazioni moderne, accessibili
+        e performanti senza dipendenze esterne.
+    </p>
+</section>
+
+<section id="quiz" class="quiz">
+    <h2>Quiz finale HTML</h2>
+    <p class="quiz-intro">
+        Metti alla prova le tue conoscenze. Seleziona una risposta per ogni domanda.
+    </p>
+
+    <form id="quiz-form">
+
+        <div class="quiz-question">
+            <p>1️⃣ Qual è l’elemento semantico principale di una pagina?</p>
+            <label><input type="radio" name="q1" value="a"> &lt;main&gt;</label>
+            <label><input type="radio" name="q1" value="b"> &lt;div&gt;</label>
+            <label><input type="radio" name="q1" value="c"> &lt;section&gt;</label>
+        </div>
+
+        <div class="quiz-question">
+            <p>2️⃣ Dove vanno inseriti i meta tag?</p>
+            <label><input type="radio" name="q2" value="a"> &lt;body&gt;</label>
+            <label><input type="radio" name="q2" value="b"> &lt;head&gt;</label>
+            <label><input type="radio" name="q2" value="c"> &lt;footer&gt;</label>
+        </div>
+
+        <div class="quiz-question">
+            <p>3️⃣ Quale elemento migliora l’accessibilità delle immagini?</p>
+            <label><input type="radio" name="q3" value="a"> title</label>
+            <label><input type="radio" name="q3" value="b"> src</label>
+            <label><input type="radio" name="q3" value="c"> alt</label>
+        </div>
+
+        <div class="quiz-question">
+            <p>4️⃣ Quale API permette di salvare dati persistenti?</p>
+            <label><input type="radio" name="q4" value="a"> cookies</label>
+            <label><input type="radio" name="q4" value="b"> sessionStorage</label>
+            <label><input type="radio" name="q4" value="c"> localStorage</label>
+        </div>
+
+        <div class="quiz-question">
+            <p>5️⃣ Qual è una best practice HTML?</p>
+            <label><input type="radio" name="q5" value="a"> Usare solo div</label>
+            <label><input type="radio" name="q5" value="b"> HTML semantico</label>
+            <label><input type="radio" name="q5" value="c"> Stile inline</label>
+        </div>
+
+        <button type="button" onclick="checkQuiz()" class="quiz-btn">
+            Verifica risposte
+        </button>
+
+        <div id="quiz-result" class="quiz-result"></div>
+
+    </form>
+</section>
+
+
+</main>
+
+<footer>
+    <p>Guida HTML5 & Best Practice © 2026</p>
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>

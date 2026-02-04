@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Guida agli elementi HTML</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/dark.css">
+</head>
+
+<body>
+
+<!-- 🔘 DARK MODE BUTTON -->
+<button id="darkToggle" class="dark-toggle" aria-label="Attiva dark mode">
+    🌙
+</button>
+
+<header>
+    <h1>Guida completa agli elementi HTML</h1>
+    <p>Questa pagina spiega i principali elementi HTML e come si usano.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Guida Base</a></li>
+        <li><a href="guida-avanzata.html">Guida Avanzata</a></li>
+        <li><a href="guida-html5.html">HTML5 & Best Practice</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="struttura">
+    <h2>Elementi di struttura</h2>
+    <p>Questi elementi definiscono la struttura di base di una pagina.</p>
+
+    <ul>
+        <li><strong>&lt;html&gt;</strong>: elemento radice del documento</li>
+        <li><strong>&lt;head&gt;</strong>: contiene metadati</li>
+        <li><strong>&lt;body&gt;</strong>: contiene il contenuto visibile</li>
+    </ul>
+</section>
+
+<section id="testo">
+    <h2>Elementi di testo</h2>
+
+    <p><strong>&lt;p&gt;</strong> crea un paragrafo.</p>
+    <p><em>&lt;em&gt;</em> enfatizza il testo.</p>
+    <p><strong>&lt;strong&gt;</strong> indica testo importante.</p>
+
+    <h3>Titoli</h3>
+    <p>I titoli vanno da &lt;h1&gt; a &lt;h6&gt;.</p>
+</section>
+
+<section id="liste">
+    <h2>Liste</h2>
+
+    <h3>Lista non ordinata</h3>
+    <ul>
+        <li>&lt;ul&gt;</li>
+        <li>&lt;li&gt;</li>
+    </ul>
+
+    <h3>Lista ordinata</h3>
+    <ol>
+        <li>Primo elemento</li>
+        <li>Secondo elemento</li>
+    </ol>
+</section>
+
+<section id="link-img">
+    <h2>Link e immagini</h2>
+
+    <p>
+        <strong>&lt;a&gt;</strong> crea un link:
+        <a href="https://developer.mozilla.org/it/docs/Web/HTML" target="_blank">
+            Documentazione HTML
+        </a>
+    </p>
+
+    <p><strong>&lt;img&gt;</strong> inserisce un'immagine:</p>
+    <img src="https://via.placeholder.com/300" alt="Immagine di esempio">
+</section>
+
+<section id="form">
+    <h2>Form</h2>
+
+    <form>
+        <label>
+            Nome:
+            <input type="text" placeholder="Inserisci il nome">
+        </label>
+
+        <label>
+            Email:
+            <input type="email" placeholder="Inserisci l'email">
+        </label>
+
+        <label>
+            Messaggio:
+            <textarea placeholder="Scrivi qui..."></textarea>
+        </label>
+
+        <button type="submit">Invia</button>
+    </form>
+</section>
+
+<section id="tabelle">
+    <h2>Tabelle</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Elemento</th>
+                <th>Descrizione</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Contenitore della tabella</td>
+            </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Riga</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Cella</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="semantici">
+    <h2>Elementi semantici</h2>
+
+    <ul>
+        <li><strong>&lt;header&gt;</strong>: intestazione</li>
+        <li><strong>&lt;nav&gt;</strong>: navigazione</li>
+        <li><strong>&lt;main&gt;</strong>: contenuto principale</li>
+        <li><strong>&lt;section&gt;</strong>: sezione tematica</li>
+        <li><strong>&lt;article&gt;</strong>: contenuto indipendente</li>
+        <li><strong>&lt;footer&gt;</strong>: piè di pagina</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Esempio HTML Live</h2>
+
+    <textarea id="live-code" oninput="updatePreview()" rows="6">
+<h1>Ciao mondo</h1>
+<p>Scrivi HTML qui!</p>
+    </textarea>
+
+    <iframe id="live-preview"></iframe>
+</section>
+
+
+</main>
+
+<footer>
+    <p>Pagina di esempio HTML © 2026</p>
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
